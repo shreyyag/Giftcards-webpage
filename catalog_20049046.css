@@ -1,0 +1,587 @@
+/*STYLING THE BACKGROUND*/
+
+Giftcard_Store {
+    background-image: url("bg.jpg");
+}
+
+h1 {
+    display: flex;
+    height: 60px;
+    font-family: sans-serif;
+    top: 0;
+    background-color: black;
+}
+
+home,
+about,
+cards,
+contact {
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 10px;
+    position: relative;
+}
+
+
+/*nav bar HOVER effect*/
+
+home:hover,
+about:hover,
+cards:hover,
+contact:hover {
+    background-color: white;
+    color: aquamarine;
+}
+
+home::before,
+about::before,
+cards::before,
+contact::before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    opacity: 0;
+    border-width: 0 0 3px 3px;
+    transition: all 0.3s;
+}
+
+home:hover::before,
+about:hover::before,
+cards:hover::before,
+contact:hover::before {
+    opacity: 1;
+    bottom: -8px;
+    left: -8px;
+}
+
+home::after,
+about::after,
+cards::after,
+contact::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    opacity: 0;
+    border-width: 3px 3px 0 0;
+    transition: all 0.3s;
+}
+
+home:hover::after,
+about:hover::after,
+cards:hover::after,
+contact:hover::after {
+    opacity: 1;
+    top: -8px;
+    right: -8px;
+}
+
+
+/*LOGO*/
+
+logo {
+    float: right;
+    width: 200px;
+    height: 150px;
+    background-image: url("logo.jpg");
+    margin-top: 15px;
+}
+
+
+/*STORE NAME DISPLAY*/
+
+storename {
+    font-family: sans-serif;
+    font-style: italic;
+    display: block;
+    width: auto;
+    font-size: 50px;
+    position: absolute;
+    left: 1070px;
+    color: black;
+}
+
+
+/*BRAND ASSOCIATIONS TEXT*/
+
+brands {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    width: 500px;
+    font-size: 25px;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    position: relative;
+    left: 420px;
+    margin-top: 140px;
+    padding: 8px;
+}
+
+
+/*BRANDS FLEX*/
+
+images {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    border: solid 3px black;
+    border-radius: 8px;
+    margin-top: 30px;
+    width: 98%;
+    padding: 8px;
+    padding-left: 10px;
+}
+
+amazon {
+    width: 250px;
+    height: 215px;
+    background-image: url("amazon.png");
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: 4px;
+    margin-left: 7px;
+}
+
+foodmandu {
+    width: 250px;
+    height: 215px;
+    background-image: url("foodmandu.png");
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+netflix {
+    width: 250px;
+    height: 215px;
+    background-image: url("netflix.jpg");
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+zara {
+    width: 250px;
+    height: 215px;
+    background-image: url("zara.jpg");
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+daraz {
+    width: 250px;
+    height: 215px;
+    background-image: url("daraz.png");
+    border: solid 2px black;
+    border-radius: 8px;
+    margin: 4px;
+}
+
+
+/*POP-UP IMAGES*/
+
+amazon:hover,
+netflix:hover,
+foodmandu:hover,
+zara:hover,
+daraz:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+recommend {
+    display: block;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    width: 500px;
+    font-size: 25px;
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    position: relative;
+    left: 420px;
+    margin-top: 80px;
+    padding: 8px;
+}
+
+
+/*GIFT CARD DISPLAY BOXES*/
+
+Gift_card {
+    padding: 10px;
+    display: inline-grid;
+    width: auto;
+    border: 2px solid rgb(120, 245, 203);
+    position: relative;
+    width: 29%;
+    margin: 50px 10px 0 10px;
+    border-radius: 25px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+
+/*CARD NAME*/
+
+cname {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20pt;
+    color: rgb(16, 196, 136);
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 1px;
+    position: relative;
+}
+
+
+/*DETAILS OF THE CARD*/
+
+gift_code,
+type,
+availability,
+cost,
+validity,
+num_of_users,
+discount,
+delivery,
+urgent,
+general {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16pt;
+}
+
+
+/*BUY BUTTON*/
+
+buy {
+    display: flex;
+    flex-direction: column;
+    border: solid 3px rgb(16, 196, 136);
+    font-weight: bold;
+    color: black;
+    background-color: #40e495;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin-left: 100px;
+}
+
+
+/*HOVER FOR BUY BUTTON*/
+
+buy:hover {
+    background-color: white;
+    color: rgb(16, 196, 136);
+    cursor: pointer;
+}
+
+
+/*UNAVAILABLE BUTTON*/
+
+display {
+    display: flex;
+    flex-direction: column;
+    border: solid 3px rgb(16, 196, 136);
+    font-weight: bold;
+    color: red;
+    background-color: aquamarine;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+
+/*IMAGES FOR THE CARDS*/
+
+Image1 {
+    width: 350px;
+    height: 200px;
+    background-image: url("netflixgc.jpg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image2 {
+    width: 350px;
+    height: 200px;
+    background-image: url("steamgc.jpg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image3 {
+    width: 350px;
+    height: 200px;
+    background-image: url("foodmandugc.jpeg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image4 {
+    width: 350px;
+    height: 200px;
+    background-image: url("darazgc.jpg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image5 {
+    width: 350px;
+    height: 200px;
+    background-image: url("zaragc.jpg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image6 {
+    width: 350px;
+    height: 200px;
+    background-image: url("amazongc.png");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image7 {
+    width: 350px;
+    height: 200px;
+    background-image: url("kids.jpg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image8 {
+    width: 350px;
+    height: 200px;
+    background-image: url("foodmandugc.jpeg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image9 {
+    width: 350px;
+    height: 200px;
+    background-image: url("image9.jpg");
+    position: relative;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 3px;
+    margin-left: 15px;
+}
+
+Image1:hover,
+Image2:hover,
+Image3:hover,
+Image4:hover,
+Image5:hover,
+Image6:hover,
+Image7:hover,
+Image8:hover,
+Image9:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+/*LOAD MORE BUTTON*/
+
+more {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    left: 1100px;
+    top: 2500px;
+    padding: 1px;
+    border: solid 3px rgb(16, 196, 136);
+    cursor: pointer;
+}
+
+
+/*HOVER MORE BUTTON*/
+
+more:hover {
+    background-color: rgb(16, 196, 136);
+    color: white;
+}
+
+
+/*FOOTER SECTION*/
+
+Footer {
+    display: flex;
+    background-color: black;
+    height: 240px;
+    margin-top: 100px;
+}
+
+t {
+    text-align: center;
+    position: absolute;
+    margin-top: 50px;
+    left: 180px;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: white;
+}
+
+Uk {
+    position: absolute;
+    margin-top: 80px;
+    left: 180px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+NEPAL {
+    position: absolute;
+    margin-top: 110px;
+    left: 180px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+t2 {
+    position: absolute;
+    margin-top: 50px;
+    left: 600px;
+    font-size: 21px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+uk {
+    position: absolute;
+    margin-top: 80px;
+    left: 590px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+Nepal {
+    position: absolute;
+    margin-top: 110px;
+    left: 590px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+bottom {
+    position: absolute;
+    margin-top: 170px;
+    left: 575px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+}
+
+website {
+    position: absolute;
+    margin-top: 190px;
+    left: 610px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*LIST OF SOCIAL MEDIA*/
+
+find_us {
+    margin-top: 50px;
+}
+
+li {
+    list-style: none;
+    display: block;
+    margin-top: 10px;
+    margin-left: 1000px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+Uk:hover,
+NEPAL:hover,
+uk:hover,
+Nepal:hover,
+website:hover,
+li:hover {
+    color: aquamarine;
+}

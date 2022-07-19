@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<!-- schema declaration -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" 
+elementFormDefault="qualified" >
+  <xs:element name="Giftcard_Store">
+    <xs:complexType>
+        <xs:sequence>
+          <xs:element name="nav_bar">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="h1">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="home" type="xs:string"/>
+                      <xs:element name="about" type="xs:string"/>
+                      <xs:element name="cards" type="xs:string"/>
+                      <xs:element name="contact" type="xs:string"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Store">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="logo"/>
+                <xs:element name="storename" type="xs:string"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="partners">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="brands" type="xs:string"/>
+                <xs:element name="images">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="amazon"/>
+                      <xs:element name="daraz"/>
+                      <xs:element name="netflix"/>
+                      <xs:element name="zara"/>
+                      <xs:element name="foodmandu"/>
+                    </xs:sequence>
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="category">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="recommend" type="xs:string"/>
+                <xs:element maxOccurs="unbounded" name="Gift_card">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:choice maxOccurs="unbounded">
+                        <xs:element name="Image1"/>
+                        <xs:element name="Image2"/>
+                        <xs:element name="Image3"/>
+                        <xs:element name="Image4"/>
+                        <xs:element name="Image5"/>
+                        <xs:element name="cname">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="used" type="xs:string" use="required"/>
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="type" type="xs:string"/>
+                      <xs:element name="gift_code" type="xs:string"/>
+                      <xs:element name="cost">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="currency" type="xs:string" use="required"/>
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="validity">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="valid" type="xs:string" use="required"/>
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="delivery">
+                        <xs:complexType>
+                          <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                              <xs:attribute name="in" type="xs:string" use="required"/>
+                            </xs:extension>
+                          </xs:simpleContent>
+                        </xs:complexType>
+                        </xs:element>
+                        <xs:element name="time">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="general" type="xs:string"/>
+                              <xs:element name="urgent" type="xs:string"/>
+                            </xs:sequence>
+                          </xs:complexType>
+                        </xs:element>
+                        <xs:element name="display" type="xs:string"/>
+                        <xs:element name="num_of_users" type="xs:string"/>
+                        <xs:element name="discount" type="xs:string"/>
+                        <xs:element name="buy" type="xs:string"/>
+                        <xs:element name="Image6"/>
+                        <xs:element name="Image7"/>
+                        <xs:element name="Image8"/>
+                        <xs:element name="Image9"/>
+                      </xs:choice>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required" />
+                    <xs:attribute name="type" type="xs:string" use="required" />
+                    <xs:attribute name="status" type="xs:string" use="required" />
+                  </xs:complexType>
+              </xs:element>
+              <xs:element name="more" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Footer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="find_us">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="li" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="store_info">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="address">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="t" type="xs:string"/>
+                          <xs:element name="Uk" type="xs:string"/>
+                          <xs:element name="NEPAL" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="telephone_num">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="t2" type="xs:string"/>
+                          <xs:element name="uk">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="countrycode" type="xs:string" use="required"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element name="Nepal">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="countrycode" type="xs:string" use="required"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="website" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="bottom" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

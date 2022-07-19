@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    Name: Shreya Gurung
+    London met id: 20049046
+    College id: np01cp4s210090
+-->
+<?xml-stylesheet type="text/css" href="catalog_20049046.css"?>
+
+<!--Refering style sheet-->
+<Giftcard_Store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20049046.xsd">
+    <nav_bar>
+        <h1>
+            <home>HOME</home>     
+            <about>ABOUT US</about>
+            <cards>GIFT CARDS</cards>
+            <contact>CONTACT US</contact>
+        </h1>
+    </nav_bar>
+    <Store>
+        <logo/>
+        <storename>GO Cards</storename>
+    </Store>
+    <partners>
+        <brands>BRAND ASSOCIATIONS:</brands>
+        <images>
+            <amazon/>
+            <daraz/>
+            <netflix/>
+            <zara/>
+            <foodmandu/>
+        </images>
+    </partners>
+    <category>
+        <recommend>RECOMMENDED:</recommend>
+        <Gift_card id="C01" type="digital" status="available">
+            <Image1/>
+            <cname used="steam">Netflix Gift Card</cname>
+            <type>Type: DIGITAL</type>
+            <gift_code>Code: NF011</gift_code>
+            <cost currency="pounds">Price: &#163;65.79</cost>
+            <validity valid="months">
+                Validity: 3 months
+            </validity>
+            <num_of_users>Number of users: 30+</num_of_users>   
+            <buy>BUY</buy>
+        </Gift_card>
+        <Gift_card id="C02" type="digital" status="available">
+            <Image2/>
+            <cname used="steam">Amazon Gift Card</cname>
+            <type>Type: DIGITAL</type>
+            <gift_code>Code: AM003</gift_code>
+            <cost currency="pounds">Price: &#163;89.54</cost>
+            <validity valid="months">
+                Validity: 2 months
+            </validity>
+            <num_of_users>Number of users: 15+ </num_of_users>
+            <discount>Discount: 20%</discount>
+            <buy>BUY</buy>
+        </Gift_card >
+        <Gift_card id="C03" type="physical" status="unavailable">
+            <Image3/>
+            <cname used="food">Foodmandu gift card</cname>
+            <type>Type: PHYSICAL</type>
+            <cost currency="rupees">Price: Rs 5000</cost>
+            <validity valid="days"> 
+                Validity: 26 days 
+            </validity>
+            <delivery in="Nepal">Delivery: Nepal only</delivery>
+            <time>
+                <general>Time to deliver: 2days</general>
+                <urgent>Urgent delivery: available</urgent>
+            </time>
+            <display>UNAVAILABLE</display>
+        </Gift_card>
+        <Gift_card id="C04" type="digital" status="available">
+            <Image4/>
+            <cname used="shop">Daraz gift card</cname>
+            <type>Type: DIGITAL</type>
+            <gift_code>Code: D0121</gift_code>
+            <cost currency="rupees">Price: Rs 8000</cost>
+            <validity valid="days">
+                Validity: 45 days
+            </validity>
+            <num_of_users>Number of users: 40+ </num_of_users>
+            <discount>Discount: 30%</discount>
+            <buy>BUY</buy>
+        </Gift_card>
+        <Gift_card id="C05" type="physical" status="available">
+            <Image5/>
+            <cname used="shop">ZARA gift card</cname>   
+            <type>Type: PHYSICAL</type>
+            <cost currency="pounds">Price: &#163;95.63</cost>
+            <validity valid="months">
+                Validity: 3 months
+            </validity>
+            <num_of_users>Number of users: 35+</num_of_users>
+            <discount>Discount: 25%</discount>
+            <delivery in="both">Delivery: NEPAL and UK</delivery>
+            <time>
+                <general>Time to deliver: 2 days</general>
+                <urgent>Urgent delivery: available</urgent>
+            </time>
+            <buy>BUY</buy>
+        </Gift_card>
+        <Gift_card id="C06" type="digital" status="unavailable">
+            <Image6/>
+            <cname used="steam">Amazon 180 gift card</cname>
+            <type>Type: DIGITAL</type>
+            <gift_code>Code: A0191</gift_code>
+            <cost currency="pounds">Price: &#163;110.55 </cost>
+            <validity valid="months">
+                Validity: 6 months
+            </validity>
+            <display>UNAVAILABLE</display>
+        </Gift_card>
+        <Gift_card id="C07" type="physical" status="unavailable">
+            <Image7/>
+            <cname used="clothes">ZARA kids gift card</cname>
+            <type>Type: PHYSICAL</type>
+            <cost currency="pounds">Price: &#163;90.39 </cost>
+            <validity valid="months">
+                Validity:4 months
+            </validity>
+            <delivery in="UK">Delivery: UK only</delivery>
+            <time>
+                <general>Time to deliver: 3 days</general>
+                <urgent>Urgent delivery: available</urgent>
+            </time>
+            <display>UNAVAILABLE</display>
+        </Gift_card>
+        <Gift_card id="C08" type="physical" status="available">
+            <Image8/>
+            <cname used="food">Foodmandu gift card</cname>
+            <type>Type: PHYSICAL</type>
+            <cost currency="rupees">Price: Rs.11000 </cost>
+            <validity valid="days">
+                Validity: 29 days
+            </validity>
+            <num_of_users>Number of users: 10+</num_of_users>
+            <discount>Discount: 45%</discount>
+            <delivery in="Nepal">Delivery: Nepal only</delivery>
+            <time>
+                <general>Time to deliver: 2days</general>
+                <urgent>Urgent delivery: available</urgent>
+            </time>
+            <buy>BUY</buy>
+        </Gift_card>
+        <Gift_card id="C09" type="digital" status="available">
+            <Image9/>
+            <cname used="steam">Netflix 360 Gift Card</cname>
+            <type>Type: DIGITAL</type>
+            <gift_code>Code: NF369</gift_code>
+            <cost currency="pounds">Price: &#163;130.50 </cost>
+            <validity valid="months">
+                Validity: 6 months 
+            </validity>
+            <num_of_users>Number of users: 50+</num_of_users>
+            <buy>BUY</buy>
+        </Gift_card>
+        <more>LOAD MORE...</more>
+    </category>
+    <Footer>
+        <find_us>
+            <li>You can find us at:</li>
+            <li>facebook</li>
+            <li>instagram</li>
+            <li>twitter</li>
+        </find_us>
+        <store_info>
+            <address>
+                <t>We are located at:</t>
+                <Uk>London, UK</Uk>
+                <NEPAL>Kathmandu, NEPAL</NEPAL>
+            </address>
+            <telephone_num>
+                <t2>Contact us:</t2>
+                <uk countrycode="+44">UK: +44 53030283</uk>
+                <Nepal countrycode="+977">Nepal: +977 9823040814</Nepal>
+            </telephone_num>
+            <website>www.gocards.com</website>
+        </store_info>
+        <bottom>All rights reserved &#169;gocards</bottom>
+    </Footer>
+</Giftcard_Store>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+    
